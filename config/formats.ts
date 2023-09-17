@@ -4692,6 +4692,14 @@ export const Formats: FormatList = [
 		unbanlist: ['Damp Rock'],
 	},
 	{
+		name: "[Gen 5] OU Rebalanced",
+		desc: 'OU rebalance mod made by someone with zero programming experience lmao',
+		mod: 'gen5rebalance',
+		searchShow: false,
+		ruleset: ['[Gen 5] OU'],
+		banlist: ['Latios'],
+	},
+	{
 		name: "[Gen 5] CAP",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/posts/8967093/">BW2 CAP Viability Rankings</a>`,
