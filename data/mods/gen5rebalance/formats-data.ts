@@ -1467,7 +1467,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	latios: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 	},
 	kyogre: {
