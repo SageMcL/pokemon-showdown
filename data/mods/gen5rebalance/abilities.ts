@@ -78,8 +78,17 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},
 	sandstream: {
 		inherit: true,
+		onModifySpDPriority: 10,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.hasType('Rock')) return;
+			else
+				if (this.field.isWeather('sandstorm')) {
+				return this.modify(spd, 1.5);
+			}
+		},
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm') return false;
+			
 		},
 	},
 	sandveil: {
