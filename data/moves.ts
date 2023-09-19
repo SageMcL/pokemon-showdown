@@ -14712,7 +14712,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fire",
 	},
 	quash: {
-		num: 511,
+		num: 2000,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -15999,7 +15999,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Cute",
 	},
 	sandblast: {
-		num: 2001,
+		num: 511,
 		accuracy: 75,
 		basePower: 100,
 		category: "Physical",

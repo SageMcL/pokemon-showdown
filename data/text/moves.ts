@@ -5392,6 +5392,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Lowers the target's accuracy by 1 stage.",
 		shortDesc: "Lowers the target's accuracy by 1.",
 	},
+	sandblast: {
+		name: "Sandblast",
+		desc: "This move cannot miss during a sandstorm.",
+		shortDesc: "Can't miss in sand.",
+	},
 	sandsearstorm: {
 		name: "Sandsear Storm",
 		desc: "Has a 20% chance to burn the target. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
