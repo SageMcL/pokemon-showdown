@@ -1036,7 +1036,6 @@ export const Aliases: {[alias: string]: string} = {
 	rapidflow: "G-Max Rapid Flow",
 	replenish: "G-Max Replenish",
 	resonance: "G-Max Resonance",
-	sandblast: "G-Max Sandblast",
 	smite: "G-Max Smite",
 	snooze: "G-Max Snooze",
 	steelsurge: "G-Max Steelsurge",
