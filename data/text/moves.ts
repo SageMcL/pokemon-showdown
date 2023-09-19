@@ -5387,8 +5387,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Lowers the target's accuracy by 1 stage.",
 		shortDesc: "Lowers the target's accuracy by 1.",
 	},
-	sandblast: {
-		name: "Sandblast",
+	sandcannon: {
+		name: "Sand cannon",
 		desc: "This move cannot miss during a sandstorm.",
 		shortDesc: "Can't miss in sand.",
 	},

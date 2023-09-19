@@ -15975,12 +15975,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {evasion: 1}},
 		contestType: "Cute",
 	},
-	sandblast: {
+	sandcannon: {
 		num: 511,
 		accuracy: 75,
 		basePower: 100,
 		category: "Physical",
-		name: "Sandblast",
+		name: "Sand Cannon",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, wind: 1},
