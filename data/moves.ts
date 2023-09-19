@@ -17981,7 +17981,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 			onEntryHazard(pokemon) {
 				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
 				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
-				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
+				if (pokemon.hasType('Ice') && this.field.isWeather('hail')) {
+					this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 48);
+				} else this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
 			},
 		},
 		secondary: null,
@@ -18300,8 +18302,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onEntryHazard(pokemon) {
 				if (pokemon.hasItem('heavydutyboots')) return;
-				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+				if (pokemon.hasType('Ice') && this.field.isWeather('hail')) {
+					const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 16);
+			}
+				else {
+					const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
+			}
 			},
 		},
 		secondary: null,
