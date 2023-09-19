@@ -1035,6 +1035,14 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	willowisp: {
 		inherit: true,
+		onModifyMove(move, pokemon, target) {
+			switch (target?.effectiveWeather()) {
+				case 'sunnyday':
+				case 'desolateland':
+				move.accuracy = true;
+				break;
+			}
+		},
 		accuracy: 75,
 	},
 	wonderroom: {
