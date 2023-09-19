@@ -323,11 +323,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	gmaxsandblast: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	gmaxsmite: {
+	smite: {
 		inherit: true,
 		isNonstandard: "Past",
 	},

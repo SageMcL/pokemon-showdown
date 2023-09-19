@@ -15264,7 +15264,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Silicobra",
 		evoLevel: 36,
 		eggGroups: ["Field", "Dragon"],
-		canGigantamax: "G-Max Sandblast",
 	},
 	sandacondagmax: {
 		num: 844,

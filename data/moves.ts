@@ -7207,29 +7207,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Ice",
 		contestType: "Cool",
 	},
-	gmaxsandblast: {
-		num: 1000,
-		accuracy: true,
-		basePower: 10,
-		category: "Physical",
-		isNonstandard: "Gigantamax",
-		name: "G-Max Sandblast",
-		pp: 5,
-		priority: 0,
-		flags: {},
-		isMax: "Sandaconda",
-		self: {
-			onHit(source) {
-				for (const pokemon of source.foes()) {
-					pokemon.addVolatile('partiallytrapped', source, this.dex.getActiveMove('G-Max Sandblast'));
-				}
-			},
-		},
-		secondary: null,
-		target: "adjacentFoe",
-		type: "Ground",
-		contestType: "Cool",
-	},
 	gmaxsmite: {
 		num: 1000,
 		accuracy: true,
